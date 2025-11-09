@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="669.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #368D96; -fx-border-width: 7;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VistaEditar">
+   <children>
+      <Label layoutX="30.0" layoutY="14.0" prefHeight="15.0" prefWidth="280.0" text="Editar contenido:">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMensaje" layoutX="199.0" layoutY="358.0" prefHeight="46.0" prefWidth="438.0" style="-fx-background-color: center;" />
+      <TextField fx:id="tfNombreContent" layoutX="32.0" layoutY="201.0" prefHeight="126.0" prefWidth="266.0" promptText="Título del contenido" style="-fx-background-color: #CFCFCF; -fx-alignment: left;">
+         <font>
+            <Font name="Courier New" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="tfDescContent" layoutX="371.0" layoutY="201.0" prefHeight="126.0" prefWidth="266.0" promptText="Descripción del contenido" style="-fx-background-color: #CFCFCF; -fx-alignment: left;">
+         <font>
+            <Font name="Courier New" size="13.0" />
+         </font></TextField>
+      <Button layoutX="31.0" layoutY="351.0" mnemonicParsing="false" onAction="#cambiosClk" prefHeight="26.0" prefWidth="154.0" style="-fx-background-color: #226C75;" text="Guardar cambios">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font></Button>
+      <Button layoutX="30.0" layoutY="391.0" mnemonicParsing="false" onAction="#regresarClk" prefHeight="26.0" prefWidth="154.0" style="-fx-background-color: #226C75;" text="Regresar">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font></Button>
+      <Label fx:id="lblTitle" layoutX="32.0" layoutY="113.0" prefHeight="26.0" prefWidth="266.0" style="-fx-background-color: #CFCFCF;">
+         <font>
+            <Font name="Courier New" size="13.0" />
+         </font></Label>
+      <Label fx:id="lblNewTitle" layoutX="32.0" layoutY="177.0" text="Nuevo título:">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblNewDesc" layoutX="371.0" layoutY="177.0" text="Nueva descripción:">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblActTitle" layoutX="32.0" layoutY="87.0" text="Título actual:">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblActDesc" layoutX="371.0" layoutY="87.0" text="Descripción actual:">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblDesc" layoutX="371.0" layoutY="113.0" prefHeight="26.0" prefWidth="266.0" style="-fx-background-color: #CFCFCF;">
+         <font>
+            <Font name="Courier New" size="13.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

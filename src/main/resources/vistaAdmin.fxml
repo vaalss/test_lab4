@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="669.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #368D96; -fx-border-width: 7;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VistaAdmin">
+   <children>
+      <Button layoutX="114.0" layoutY="81.0" mnemonicParsing="false" onAction="#publicarClk" prefHeight="26.0" prefWidth="202.0" style="-fx-background-color: #226C75; -fx-alignment: center;" text="Publicar">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font></Button>
+      <Button layoutX="367.0" layoutY="81.0" mnemonicParsing="false" onAction="#eliminarClk" prefHeight="26.0" prefWidth="186.0" style="-fx-background-color: #226C75; -fx-alignment: center;" text="Eliminar">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font></Button>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="127.0" text="Admin:">
+         <font>
+            <Font name="Bodoni MT" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblcorreoUser" layoutX="141.0" layoutY="27.0" prefHeight="26.0" prefWidth="411.0" style="-fx-alignment: left;">
+         <font>
+            <Font name="Courier New" size="13.0" />
+         </font></Label>
+      <ListView fx:id="lvContenidoAdmin" layoutX="114.0" layoutY="184.0" prefHeight="200.0" prefWidth="439.0" style="-fx-background-color: #CFCFCF;" />
+      <Label fx:id="lblMensaje" layoutX="150.0" layoutY="392.0" prefHeight="34.0" prefWidth="368.0" style="-fx-alignment: center;">
+         <font>
+            <Font name="Courier New" size="13.0" />
+         </font></Label>
+      <Button layoutX="569.0" layoutY="20.0" mnemonicParsing="false" onAction="#exitClk" style="-fx-background-color: #368D96; -fx-alignment: center;" text="Cerrar sesion" />
+      <ChoiceBox fx:id="cbFiltro" layoutX="114.0" layoutY="145.0" prefWidth="150.0" style="-fx-background-color: #368D96;" />
+      <Label fx:id="lblFiltro" layoutX="114.0" layoutY="124.0" text="Filtrar por:">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

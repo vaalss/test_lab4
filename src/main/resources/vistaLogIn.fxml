@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="365.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #368D96; -fx-border-width: 7;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VistaLogin">
+   <children>
+      <Button layoutX="103.0" layoutY="272.0" mnemonicParsing="false" onAction="#loginClk" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #226C75;" text="Log In" textAlignment="CENTER">
+         <font>
+            <Font name="Courier New" size="13.0" />
+         </font></Button>
+      <Button layoutX="103.0" layoutY="314.0" mnemonicParsing="false" onAction="#registrarClk" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #226C75;" text="Registrarse" textAlignment="CENTER">
+         <font>
+            <Font name="Courier New" size="13.0" />
+         </font></Button>
+      <PasswordField fx:id="tfpass" layoutX="51.0" layoutY="207.0" prefHeight="26.0" prefWidth="263.0" promptText="password" style="-fx-background-color: #CFCFCF;">
+         <font>
+            <Font name="Courier New" size="13.0" />
+         </font></PasswordField>
+      <TextField fx:id="tfcorreo" layoutX="51.0" layoutY="164.0" prefHeight="26.0" prefWidth="263.0" promptText="correo" style="-fx-background-color: #CFCFCF;">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font></TextField>
+      <Label layoutX="85.0" layoutY="47.0" prefHeight="74.0" prefWidth="194.0" text="LOG IN" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="54.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMensaje" layoutX="51.0" layoutY="357.0" prefHeight="68.0" prefWidth="263.0" style="-fx-alignment: center;" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
