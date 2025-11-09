@@ -29,6 +29,10 @@ public abstract class Content {
         return this.descripcion;
     }
 
+    public User getEditor() {
+        return this.creador;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }

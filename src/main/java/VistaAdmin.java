@@ -51,7 +51,7 @@ public class VistaAdmin {
         Content seleccionado = lvContenidoAdmin.getSelectionModel().getSelectedItem();
         Admin admin = (Admin) controlador.getUser();
         ArrayList<Content> contenido = controlador.getContenido();
-        lblMensaje.setText(admin.eliminar(seleccionado, contenido));
+        lblMensaje.setText(admin.eliminar(seleccionado, contenido, seleccionado.getEditor()));
         actualizarLista();
     }
 

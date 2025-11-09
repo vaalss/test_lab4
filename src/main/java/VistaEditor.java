@@ -123,8 +123,9 @@ public class VistaEditor {
 
     private void filtrarContenido() {
         String filtro = cbFiltro.getValue();
+        Editor editor = (Editor) controlador.getUser();
         lvContenidoEditor.getItems().clear();
-        for (Content c : controlador.getContenido()) {
+        for (Content c : editor.getContenido()) {
             if (filtro.equals("Todos")) {
                 lvContenidoEditor.getItems().add(c);
             } else if (filtro.equals("Artículo") && c instanceof Article) {
